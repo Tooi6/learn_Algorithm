@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb)c_launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "targetArchitecture": "x64",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
+            "miDebuggerPath": "D:/work/MinGW/bin/gdb.exe",
+            "MIMode": "gdb",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "internalConsoleOptions": "openOnFirstSessionStart",
+            "externalConsole": true,
+            "preLaunchTask": "gcc",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
